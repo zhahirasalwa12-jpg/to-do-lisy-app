@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>App</title> # Nama "App" terlalu umum, tidak menjelaskan isi aplikasi
+    <title>To-Do List Sederhana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="box"> # Class "box" tidak deskriptif, kurang jelas fungsinya
-    <h1>My App</h1> # Judul masih umum, tidak spesifik (harusnya To-Do List atau sejenisnya)
+<main class="container">
+    <h1>To-Do List</h1>
 
-    <input type="text" placeholder="ketik sesuatu..."> # Tidak ada label, kurang jelas untuk pengguna
-    <button>add</button> # Penulisan "add" tidak konsisten (harusnya "Tambah")
+    <div class="input-group">
+        <label for="taskInput">Tambah Tugas:</label>
+        <input id="taskInput" type="text" placeholder="Masukkan tugas...">
+        <button>Tambah</button>
+    </div>
 
-    <ul> # Tidak ada class atau penanda khusus untuk list
-        <li>belajar</li> # Penulisan tidak konsisten (harusnya kapital di awal)
-        <li>makan</li>
-        <li>tidur</li>
+    <ul class="task-list">
+        <li>Belajar</li>
+        <li>Makan</li>
+        <li>Tidur</li>
     </ul>
-</div>
+</main>
 
-</body> # Tidak menggunakan struktur HTML yang lebih baik seperti <main>
+</body>
 </html>
